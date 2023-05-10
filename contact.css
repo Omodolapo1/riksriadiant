@@ -385,7 +385,7 @@ button {
 .body {
   min-height: 110vh;
   width: 100%;
-  background: rgb(250, 177, 41);
+  background: var(--dark-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -393,11 +393,12 @@ button {
   padding-bottom: 120px;
 }
 .container {
-  width: 80%;
+  width: 70%;
   background: white;
   border-radius: 6px;
   padding: 20px 60px 40px 40px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
 }
 .container .content {
   display: flex;
@@ -419,7 +420,7 @@ button {
   position: absolute;
   height: 70%;
   width: 2px;
-  background-color:  rgb(250, 177, 41) ;
+  background-color:  var(--dark-color) ;
   right: -15px;
   top: 50%;
   transform: translateY(-50%);
@@ -427,14 +428,16 @@ button {
 .content .left-side .you{
   font-size: 40px;
   position: relative; bottom: 27px;
-  color: rgb(250, 177, 41);
+  color: var(--dark-color);
 }
 .content .left-side .details {
   margin: 14px;
   text-align: center;
   position: relative; bottom: 30px;
 }
-
+.address details{
+  margin-top: 20px;
+}
 .content .left-side .details i {
   font-size: 25px;
 }
@@ -442,13 +445,21 @@ button {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 10px;
-  color: rgb(250, 177, 41);
+  color:var(--dark-color);
 }
 .bx{
-  color: rgb(250, 177, 41);
+  color: var(--dark-color);
 }
-.bxs-map{
-  margin-bottom: 21px;
+.topic .bxs-map{
+  margin-right: 3px;
+  font-size: 30px;
+}
+.topic .bx-phone{
+  margin-right: 6px;
+  font-size: 30px;
+}
+.topic .bxl-gmail{
+  margin-right: 6px;
   font-size: 30px;
 }
 .content .left-side .details .topic:focus{
@@ -468,7 +479,7 @@ button {
 .container .content .right-side .topic-text{
     font-size: 23px;
     font-weight: 600;
-    color:  rgb(250, 177, 41);
+    color:  var(--dark-color);
 }
 .right-side .input-box{
     height: 50px;
@@ -479,7 +490,7 @@ button {
   transition: 0.9s ease-in-out;
 }
 .right-side .input-box input:focus{
-  transform: translateY(-10px);
+  /* transform: translateY(-10px); */
   pointer-events: none;
 }
 
@@ -495,6 +506,7 @@ button {
     padding: 0 15px;
     resize: none;
 }
+
 .right-side .message-box{
     min-height: 110px;
     margin-top: 6px;   
@@ -518,6 +530,11 @@ button {
     background: red;
 } 
 
+.buttons{
+  border-radius: .5rem;
+  width: 6rem;
+  height: 3rem;
+}
 
 
 @media (max-width:900px){

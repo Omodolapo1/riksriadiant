@@ -226,7 +226,7 @@ button {
    }
    
    .card-img {
-    background-color: #494441;
+    /* background-color: #494441; */
     height: 40%;
     width: 100%;
     border-radius: .5rem;
@@ -275,7 +275,7 @@ button {
     padding: .3em;
     cursor: pointer;
     border-radius: 50px;
-    transition: .3s ease-in-out;
+    transition: .4s .2s ease-in-out;
    }
    
    /*Hover*/
@@ -285,8 +285,8 @@ button {
    }
    
    .card-button:hover {
-    border: 1px solid #ffcaa6;
-    background-color: #ffcaa6;
+    border: 1px solid var(--dark-color-light);
+    background-color: var(--dark-color-light);
    }
    
 
@@ -324,4 +324,27 @@ button {
 .footer__copy {
     text-align: center;
     padding-bottom: var(--mb-4);
+}
+/* responsiveness================================== */
+@media screen and (max-width:996px) {
+    body{
+        overflow-x: hidden;
+    }
+    .card{
+        width: 80%;
+        height: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .card-img{
+        width: 95%;
+    }
+    .card-info{
+        margin-top: 50px;
+    }
+    .card-footer{
+        margin-top: 20px;
+    }
+
+       
 }
